@@ -14,11 +14,17 @@ const Ball: React.FC<BallProps> = ({ frequency }) => {
       }, [frequency]);
     
       const mapFrequencyToPosition = (frequency: number) => {
-        if (!frequency) return 0;
-        const maxFrequency = 5000;
+        if (!frequency) {
+          return 0;
+        }
+
+        const maxFrequency = 2000;
         const maxPercentageWithinContainer = 89;
-        const position = (frequency / maxFrequency) * maxPercentageWithinContainer;
-        return Math.min(position, maxPercentageWithinContainer);
+        
+        let position = (frequency / maxFrequency) * maxPercentageWithinContainer;
+        position = Math.max(position, 0);
+        position = Math.min(position, maxPercentageWithinContainer);
+        return position;
       };
     
     return (
