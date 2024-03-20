@@ -1,5 +1,5 @@
 import './App.css'
-import usePitchRecognition from './hooks/usePitchRecognition'
+import { usePitchRecognition } from 'react-use-pitch-recognition'
 
 function App() {
   const pitch = usePitchRecognition();
