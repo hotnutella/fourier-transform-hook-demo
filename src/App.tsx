@@ -6,7 +6,8 @@ function App() {
 
   return (
     <>
-      <div>Pitch: {pitch}</div>
+      <div>Frequency: {pitch.frequency}</div>
+      <div>Note: {pitch.note}</div>
     </>
   )
 }
