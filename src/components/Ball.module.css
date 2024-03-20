@@ -1,0 +1,10 @@
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: 500ms;
+}
