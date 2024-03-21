@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Fourier Transform Hook Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a live demonstration of the `react-use-pitch-recognition` hook in action. It showcases real-time pitch detection from audio input using the user's microphone. The demo visualizes the detected pitch frequency and corresponding musical note with a dynamic ball visualizer component.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Experience the live demo here: [Fourier Transform Hook Demo](https://hotnutella.github.io/fourier-transform-hook-demo/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Real-Time Pitch Detection**: Utilizes the microphone to listen to audio input and detects the pitch in real time.
+- **Dynamic Visualization**: A ball visualizer that moves vertically based on the detected pitch frequency.
+- **Musical Note Identification**: Displays the detected pitch's frequency in Hertz (Hz) and the corresponding musical note.
 
-- Configure the top-level `parserOptions` property like this:
+## How to Use
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Visit the [demo page](https://hotnutella.github.io/fourier-transform-hook-demo/).
+2. Allow the application to access your microphone when prompted.
+3. Produce sound (e.g., by playing a musical instrument or singing) near your microphone to see the pitch detection in action.
+
+## Local Development
+
+To run this project locally:
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/hotnutella/fourier-transform-hook-demo.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate the repository:
+```bash
+   cd fourier-transform-hook-demo
+```
+
+3. Install dependencies:
+```bash
+   npm install
+```
+
+4. Start the development server
+```bash
+   npm run dev
+```
+
+5. Open http://localhost:3000 to view it in the browser.
